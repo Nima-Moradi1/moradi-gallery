@@ -1,0 +1,5 @@
+allowBuilds:
+  unrs-resolver: true
+  sharp: true
+  "@parcel/watcher": true
+  "@swc/core": true
