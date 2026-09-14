@@ -1,0 +1,38 @@
+export const finishes = [
+  {
+    id: "champagne",
+    name: "Champagne gold",
+    fa: "طلایی شامپاینی",
+    case: "#c7aa70",
+    dial: "#18201c",
+    strap: "#211b15",
+    roughness: 0.23,
+  },
+  {
+    id: "steel",
+    name: "Brushed steel",
+    fa: "استیل برس‌خورده",
+    case: "#c6cdce",
+    dial: "#121c20",
+    strap: "#172023",
+    roughness: 0.27,
+  },
+  {
+    id: "noir",
+    name: "Midnight black",
+    fa: "مشکی نیمه‌شب",
+    case: "#454846",
+    dial: "#10120f",
+    strap: "#151513",
+    roughness: 0.3,
+  },
+  {
+    id: "rose",
+    name: "Rose gold",
+    fa: "رزگلد",
+    case: "#c2917c",
+    dial: "#272021",
+    strap: "#38241e",
+    roughness: 0.24,
+  },
+] as const;
