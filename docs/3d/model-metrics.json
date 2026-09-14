@@ -1,0 +1,30 @@
+{
+  "bytes": 4546948,
+  "meshes": 57,
+  "triangles": 86820,
+  "materials": [
+    "MetalCase",
+    "MetalAccent",
+    "MetalBrushed",
+    "MetalScrew",
+    "DialFace",
+    "StrapLeather",
+    "StrapStitch",
+    "DarkRecess",
+    "JewelRuby",
+    "Lume",
+    "CrystalGlass"
+  ],
+  "groups": [
+    "Case",
+    "Bezel",
+    "Dial",
+    "Hands",
+    "Crystal",
+    "Movement",
+    "Caseback",
+    "Crown",
+    "Strap"
+  ],
+  "bounds": [2.291000008583069, 5.134300708770752, 2.8490000665187836]
+}
