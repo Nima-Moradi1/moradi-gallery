@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "title": "Moradi Gallery | A considered perspective on time",
+    "description": "The Moradi Gallery design preview. A considered perspective on watches, proportion and personal style."
+  },
+  "navigation": {
+    "brand": "MORADI GALLERY",
+    "home": "Moradi Gallery home",
+    "collections": "Collections",
+    "approach": "Our approach",
+    "label": "Main navigation",
+    "skip": "Skip to content",
+    "switchLanguage": "Switch to Persian",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "lineOne": "BUILT FOR",
+      "lineTwo": "TIMELESS TASTE",
+      "support": "A considered perspective on time.",
+      "cta": "Discover the gallery"
+    },
+    "manifesto": {
+      "heading": "CURATED FOR HOW YOU LIVE WITH TIME",
+      "body": "A watch is a personal choice. Begin with the details that matter to you: proportion, movement, material and the way it feels on your wrist."
+    },
+    "collections": {
+      "heading": "FIND YOUR PERSPECTIVE ON TIME",
+      "body": "Explore the vocabulary of watchmaking. The gallery’s product selection is being prepared; these categories introduce the direction of the collection.",
+      "classic": "Classic",
+      "automatic": "Automatic",
+      "sport": "Sport",
+      "swiss": "Swiss",
+      "japanese": "Japanese"
+    }
+  },
+  "footer": {
+    "note": "Collection preview. The illustrated timepiece is an original design concept."
+  },
+  "error": {
+    "title": "The gallery could not load.",
+    "description": "Please try loading this page again.",
+    "retry": "Try again"
+  },
+  "story": {
+    "edition": "CALIBRE M — AN ORIGINAL DESIGN STUDY",
+    "heroOne": "BUILT FOR",
+    "heroTwo": "TIMELESS TASTE.",
+    "scroll": "Scroll to discover",
+    "manifestoOne": "A CONSIDERED",
+    "manifestoTwo": "PERSPECTIVE",
+    "manifestoThree": "ON TIME.",
+    "perspective": "Our perspective",
+    "manifestoBody": "A watch is more than the hour it tells. It is proportion, texture, movement. A small world, chosen to become part of yours.",
+    "details": "In the details",
+    "caseTitle": "Case & finish",
+    "caseBody": "Polished edges meet a softly brushed case. Each surface is shaped to catch light differently.",
+    "dialTitle": "A considered dial",
+    "dialBody": "Applied markers, fine radial lines and a quiet composition. Detail reveals itself as you look closer.",
+    "anatomy": "Anatomy of time",
+    "anatomyTitle": "EVERY PART. A PURPOSE.",
+    "explore": "Explore the components",
+    "movement": "The movement",
+    "heartOne": "A MECHANICAL",
+    "heartTwo": "HEART.",
+    "heartBody": "Follow the energy through the calibre. Wheels, bridges and bearings come together in a finely balanced conversation.",
+    "rhythm": "The rhythm imagined for Calibre M",
+    "togetherOne": "NOTHING",
+    "togetherTwo": "WITHOUT",
+    "togetherThree": "THE WHOLE.",
+    "form": "The form",
+    "contours": "QUIET CONTOURS.",
+    "contoursBody": "A softened silhouette. A precise edge. The expression of restraint, from every angle.",
+    "macroDialBody": "Fine sunray texture gives the dial a subtle depth that changes with the light.",
+    "handsTitle": "Sculpted hands",
+    "handsBody": "A slender silhouette, a polished bevel, and a luminous centre.",
+    "bezelTitle": "Polished bezel",
+    "bezelBody": "A continuous frame, finished with a fine chamfer to gather the light.",
+    "profileLabel": "In profile",
+    "profileTitle": "A FINER PROFILE.",
+    "profileBody": "The case resolves into a slender edge. A finely knurled crown adds a tactile final detail.",
+    "material": "Material & touch",
+    "strapTitle": "MADE TO BE WORN.",
+    "strapBody": "Supple leather, shaped at the lugs. A fine line of stitching follows its natural curve.",
+    "personalOne": "YOUR TIME.",
+    "personalTwo": "YOUR PERSPECTIVE.",
+    "expressions": "Four expressions",
+    "finishBody": "One form. A different character in every finish.",
+    "selectFinish": "Choose a finish",
+    "previousFinish": "Previous finish",
+    "nextFinish": "Next finish",
+    "composition": "The composition",
+    "completeTitle": "THE COMPLETE PICTURE.",
+    "viewDetail": "Explore detail",
+    "chooseExpression": "Choose your expression",
+    "parts": {
+      "dial": "Dial",
+      "hands": "Hands",
+      "crystal": "Crystal",
+      "bezel": "Bezel",
+      "case": "Case & lugs",
+      "strap": "Leather strap",
+      "crown": "Crown",
+      "caseback": "Caseback",
+      "movement": "Movement"
+    }
+  }
+}
