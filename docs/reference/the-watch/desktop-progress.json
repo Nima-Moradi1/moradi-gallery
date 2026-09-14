@@ -1,0 +1,207 @@
+[
+  {
+    "p": 2,
+    "actual": 0.02413639733135656,
+    "file": "desktop-2.png"
+  },
+  {
+    "p": 4,
+    "actual": 0.02938472942920682,
+    "file": "desktop-4.png"
+  },
+  {
+    "p": 6,
+    "actual": 0.04637509266123054,
+    "file": "desktop-6.png"
+  },
+  {
+    "p": 8,
+    "actual": 0.06784284655300223,
+    "file": "desktop-8.png"
+  },
+  {
+    "p": 10,
+    "actual": 0.09894736842105264,
+    "file": "desktop-10.png"
+  },
+  {
+    "p": 12.5,
+    "actual": 0.1240919199406968,
+    "file": "desktop-12_5.png"
+  },
+  {
+    "p": 15,
+    "actual": 0.15567086730911786,
+    "file": "desktop-15.png"
+  },
+  {
+    "p": 17.5,
+    "actual": 0.18262416604892512,
+    "file": "desktop-17_5.png"
+  },
+  {
+    "p": 20,
+    "actual": 0.20741289844329133,
+    "file": "desktop-20.png"
+  },
+  {
+    "p": 22.5,
+    "actual": 0.22031134173461825,
+    "file": "desktop-22_5.png"
+  },
+  {
+    "p": 25,
+    "actual": 0.24243143068939957,
+    "file": "desktop-25.png"
+  },
+  {
+    "p": 27.5,
+    "actual": 0.2646108228317272,
+    "file": "desktop-27_5.png"
+  },
+  {
+    "p": 30,
+    "actual": 0.2900222386953299,
+    "file": "desktop-30.png"
+  },
+  {
+    "p": 32.5,
+    "actual": 0.32524833209785026,
+    "file": "desktop-32_5.png"
+  },
+  {
+    "p": 35,
+    "actual": 0.3543661971830986,
+    "file": "desktop-35.png"
+  },
+  {
+    "p": 37.5,
+    "actual": 0.3749444032616754,
+    "file": "desktop-37_5.png"
+  },
+  {
+    "p": 40,
+    "actual": 0.3978650852483321,
+    "file": "desktop-40.png"
+  },
+  {
+    "p": 42.5,
+    "actual": 0.4225648628613788,
+    "file": "desktop-42_5.png"
+  },
+  {
+    "p": 45,
+    "actual": 0.4434988880652335,
+    "file": "desktop-45.png"
+  },
+  {
+    "p": 47.5,
+    "actual": 0.4745144551519645,
+    "file": "desktop-47_5.png"
+  },
+  {
+    "p": 50,
+    "actual": 0.5028910303928836,
+    "file": "desktop-50.png"
+  },
+  {
+    "p": 52.5,
+    "actual": 0.532186805040771,
+    "file": "desktop-52_5.png"
+  },
+  {
+    "p": 55,
+    "actual": 0.5525574499629355,
+    "file": "desktop-55.png"
+  },
+  {
+    "p": 57.5,
+    "actual": 0.5635285396590066,
+    "file": "desktop-57_5.png"
+  },
+  {
+    "p": 60,
+    "actual": 0.5850259451445515,
+    "file": "desktop-60.png"
+  },
+  {
+    "p": 62.5,
+    "actual": 0.615596738324685,
+    "file": "desktop-62_5.png"
+  },
+  {
+    "p": 65,
+    "actual": 0.6539362490733877,
+    "file": "desktop-65.png"
+  },
+  {
+    "p": 67.5,
+    "actual": 0.6929280948851001,
+    "file": "desktop-67_5.png"
+  },
+  {
+    "p": 70,
+    "actual": 0.7009340252038547,
+    "file": "desktop-70.png"
+  },
+  {
+    "p": 72.5,
+    "actual": 0.7147813194959229,
+    "file": "desktop-72_5.png"
+  },
+  {
+    "p": 75,
+    "actual": 0.74529280948851,
+    "file": "desktop-75.png"
+  },
+  {
+    "p": 77.5,
+    "actual": 0.7672053372868791,
+    "file": "desktop-77_5.png"
+  },
+  {
+    "p": 80,
+    "actual": 0.8029355077835434,
+    "file": "desktop-80.png"
+  },
+  {
+    "p": 82.5,
+    "actual": 0.8287323943661972,
+    "file": "desktop-82_5.png"
+  },
+  {
+    "p": 85,
+    "actual": 0.8362045959970349,
+    "file": "desktop-85.png"
+  },
+  {
+    "p": 87.5,
+    "actual": 0.8621793921423276,
+    "file": "desktop-87_5.png"
+  },
+  {
+    "p": 90,
+    "actual": 0.8873832468495182,
+    "file": "desktop-90.png"
+  },
+  {
+    "p": 92.5,
+    "actual": 0.9341141586360266,
+    "file": "desktop-92_5.png"
+  },
+  {
+    "p": 95,
+    "actual": 0.954810971089696,
+    "file": "desktop-95.png"
+  },
+  {
+    "p": 97.5,
+    "actual": 0.9742031134173462,
+    "file": "desktop-97_5.png"
+  },
+  {
+    "p": 100,
+    "actual": 0.9875759822090436,
+    "file": "desktop-100.png"
+  }
+]
