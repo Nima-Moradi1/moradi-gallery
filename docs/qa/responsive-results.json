@@ -1,0 +1,137 @@
+[
+  {
+    "client": 1586,
+    "h1": "BUILT FOR TIMELESS TASTE",
+    "height": 992,
+    "imageReady": true,
+    "locale": "en",
+    "scroll": 1586,
+    "width": 1586
+  },
+  {
+    "client": 1920,
+    "h1": "BUILT FOR TIMELESS TASTE",
+    "height": 1080,
+    "imageReady": true,
+    "locale": "en",
+    "scroll": 1920,
+    "width": 1920
+  },
+  {
+    "client": 1440,
+    "h1": "BUILT FOR TIMELESS TASTE",
+    "height": 900,
+    "imageReady": true,
+    "locale": "en",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "client": 1366,
+    "h1": "BUILT FOR TIMELESS TASTE",
+    "height": 768,
+    "imageReady": true,
+    "locale": "en",
+    "scroll": 1366,
+    "width": 1366
+  },
+  {
+    "client": 1024,
+    "h1": "BUILT FOR TIMELESS TASTE",
+    "height": 1366,
+    "imageReady": true,
+    "locale": "en",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "client": 430,
+    "h1": "BUILT FOR TIMELESS TASTE",
+    "height": 932,
+    "imageReady": true,
+    "locale": "en",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "client": 390,
+    "h1": "BUILT FOR TIMELESS TASTE",
+    "height": 844,
+    "imageReady": true,
+    "locale": "en",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "client": 360,
+    "h1": "BUILT FOR TIMELESS TASTE",
+    "height": 800,
+    "imageReady": true,
+    "locale": "en",
+    "scroll": 360,
+    "width": 360
+  },
+  {
+    "client": 1920,
+    "h1": "برای سلیقه‌های ماندگار",
+    "height": 1080,
+    "imageReady": true,
+    "locale": "fa",
+    "scroll": 1920,
+    "width": 1920
+  },
+  {
+    "client": 1440,
+    "h1": "برای سلیقه‌های ماندگار",
+    "height": 900,
+    "imageReady": true,
+    "locale": "fa",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "client": 1366,
+    "h1": "برای سلیقه‌های ماندگار",
+    "height": 768,
+    "imageReady": true,
+    "locale": "fa",
+    "scroll": 1366,
+    "width": 1366
+  },
+  {
+    "client": 1024,
+    "h1": "برای سلیقه‌های ماندگار",
+    "height": 1366,
+    "imageReady": true,
+    "locale": "fa",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "client": 430,
+    "h1": "برای سلیقه‌های ماندگار",
+    "height": 932,
+    "imageReady": true,
+    "locale": "fa",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "client": 390,
+    "h1": "برای سلیقه‌های ماندگار",
+    "height": 844,
+    "imageReady": true,
+    "locale": "fa",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "client": 360,
+    "h1": "برای سلیقه‌های ماندگار",
+    "height": 800,
+    "imageReady": true,
+    "locale": "fa",
+    "scroll": 360,
+    "width": 360
+  }
+]
