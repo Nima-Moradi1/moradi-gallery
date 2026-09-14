@@ -35,9 +35,11 @@ class SceneBoundary extends Component<
 }
 export function MoradiWatchExperience({
   children,
+  staticContent,
   locale,
 }: {
   children: ReactNode;
+  staticContent: ReactNode;
   locale: string;
 }) {
   const root = useRef<HTMLElement>(null),
@@ -70,6 +72,11 @@ export function MoradiWatchExperience({
     cleanupTimeline.current();
     if (root.current) {
       root.current.dataset.static = "true";
+      const stage = root.current.querySelector<HTMLElement>("#watch-stage");
+      if (stage) {
+        stage.style.color = "#e5e1d7";
+        stage.style.backgroundColor = "#101410";
+      }
       root.current
         .querySelectorAll<HTMLElement>("[data-beat]")
         .forEach((el) => {
@@ -80,10 +87,12 @@ export function MoradiWatchExperience({
           el.removeAttribute("aria-hidden");
         });
     }
+    state.explore = false;
+    setExplore(false);
     setFallback(true);
     setEnabled(false);
     onReady();
-  }, [onReady]);
+  }, [onReady, state]);
   useEffect(() => {
     const story = root.current!;
     const reduce = matchMedia("(prefers-reduced-motion: reduce)");
@@ -93,14 +102,19 @@ export function MoradiWatchExperience({
     const unsupported = !context;
     context?.getExtension("WEBGL_lose_context")?.loseContext();
     const setup = () => {
-      if (reduce.matches || unsupported) {
-        story.dataset.static = "true";
-        setFallback(true);
-        setEnabled(false);
-        onReady();
+      if (
+        reduce.matches ||
+        (process.env.NODE_ENV === "development" &&
+          params.get("motion") === "reduce") ||
+        unsupported
+      ) {
+        onError();
         return () => {};
       }
       delete story.dataset.static;
+      setFallback(false);
+      setReady(false);
+      state.ready = false;
       state.quality =
         innerWidth < 700
           ? "medium"
@@ -163,6 +177,15 @@ export function MoradiWatchExperience({
                   : null;
       if (p === null) return;
       e.preventDefault();
+      if (story.dataset.static === "true") {
+        if (href) {
+          const destination =
+            story.querySelector(`[data-static-section="${href.slice(1)}"]`) ??
+            document.querySelector(href);
+          destination?.scrollIntoView({ behavior: "instant" });
+        }
+        return;
+      }
       const total = story.offsetHeight - innerHeight;
       window.scrollTo({
         top: story.offsetTop + total * p,
@@ -178,6 +201,14 @@ export function MoradiWatchExperience({
       document.removeEventListener("visibilitychange", wake);
     };
   }, [onError, onReady, state]);
+  useEffect(() => {
+    if (!explore) return;
+    const before = document.activeElement;
+    root.current?.querySelector<HTMLElement>('[role="application"]')?.focus();
+    return () => {
+      if (before instanceof HTMLElement && before.isConnected) before.focus();
+    };
+  }, [explore]);
   const selectFinish = (index: number) => {
     state.finish = (index + 4) % 4;
     root.current
@@ -202,13 +233,14 @@ export function MoradiWatchExperience({
     const action = target.closest<HTMLElement>("[data-action]")?.dataset.action;
     if (action === "next-finish") selectFinish(state.finish + 1);
     if (action === "previous-finish") selectFinish(state.finish - 1);
-    if (action === "explore") {
+    if (action === "explore" && root.current?.dataset.static !== "true") {
       state.explore = !state.explore;
       setExplore(state.explore);
       state.dragX = state.dragY = 0;
     }
     const part = target.closest<HTMLElement>("[data-part]");
     if (part) {
+      state.poseLock = null;
       const p = Number(part.dataset.pose);
       window.scrollTo({
         top:
@@ -277,7 +309,12 @@ export function MoradiWatchExperience({
             </SceneBoundary>
           </div>
         )}
-        {children}
+        <div className="contents group-data-[static=true]/story:hidden">
+          {children}
+        </div>
+        <div className="relative z-20 hidden group-data-[static=true]/story:block">
+          {staticContent}
+        </div>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 h-px bg-current/10 group-data-[static=true]/story:hidden">
           <div
             data-progress-line
@@ -295,6 +332,16 @@ export function MoradiWatchExperience({
             }
             tabIndex={0}
             onKeyDown={(e) => {
+              if (
+                ![
+                  "Escape",
+                  "ArrowLeft",
+                  "ArrowRight",
+                  "ArrowUp",
+                  "ArrowDown",
+                ].includes(e.key)
+              )
+                return;
               if (e.key === "Escape") {
                 state.explore = false;
                 setExplore(false);

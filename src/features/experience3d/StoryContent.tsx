@@ -19,6 +19,17 @@ function Beat({
 }) {
   return (
     <section
+      id={
+        id === "finishes"
+          ? "collections"
+          : id === "manifesto-copy"
+            ? "approach"
+            : id === "assembly"
+              ? "mechanism"
+              : id === "dial-macro"
+                ? "details"
+                : undefined
+      }
       data-beat={id}
       data-start={start}
       data-end={end}
@@ -73,7 +84,103 @@ export async function WatchStory({ locale }: { locale: string }) {
     "movement",
   ] as const;
   return (
-    <MoradiWatchExperience locale={locale}>
+    <MoradiWatchExperience
+      locale={locale}
+      staticContent={
+        <>
+          <section
+            data-static-section="top"
+            className="flex min-h-svh flex-col justify-end px-6 pb-14 pt-32 md:px-14"
+          >
+            <Eyebrow>{t("edition")}</Eyebrow>
+            <h1 className="max-w-2xl text-[clamp(2.3rem,5vw,5rem)] leading-tight">
+              {t("heroOne")}
+              <br />
+              {t("heroTwo")}
+            </h1>
+            <a
+              href="#approach"
+              className="mt-7 flex min-h-11 w-fit items-center gap-5 text-xs"
+            >
+              {t("scroll")} ↓
+            </a>
+          </section>
+          <div className="bg-ink px-6 py-20 text-ivory md:px-14 md:py-32">
+            <section
+              data-static-section="approach"
+              className="mx-auto max-w-6xl border-b border-ivory/15 pb-20"
+            >
+              <Eyebrow>01 — {t("perspective")}</Eyebrow>
+              <Title>
+                {t("manifestoOne")}
+                <br />
+                {t("manifestoTwo")}
+                <br />
+                {t("manifestoThree")}
+              </Title>
+              <p className="mt-8 max-w-lg text-sm leading-relaxed text-muted">
+                {t("manifestoBody")}
+              </p>
+            </section>
+            <section
+              data-static-section="mechanism"
+              className="mx-auto max-w-6xl border-b border-ivory/15 py-20"
+            >
+              <Eyebrow>02 — {t("movement")}</Eyebrow>
+              <Title>{t("anatomyTitle")}</Title>
+              <p className="mt-8 max-w-lg text-sm leading-relaxed text-muted">
+                {t("heartBody")}
+              </p>
+              <p className="mt-8 text-4xl" dir="ltr">
+                28,800
+              </p>
+              <p className="mt-2 text-xs text-muted">{t("rhythm")}</p>
+            </section>
+            <section
+              data-static-section="details"
+              className="mx-auto max-w-6xl py-20"
+            >
+              <Eyebrow>03 — {t("details")}</Eyebrow>
+              <Title>{t("completeTitle")}</Title>
+              <div className="mt-12 grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                <Copy label={t("caseTitle")} body={t("caseBody")} />
+                <Copy label={t("dialTitle")} body={t("macroDialBody")} />
+                <Copy label={t("handsTitle")} body={t("handsBody")} />
+                <Copy label={t("bezelTitle")} body={t("bezelBody")} />
+                <Copy label={t("profileTitle")} body={t("profileBody")} />
+                <Copy label={t("strapTitle")} body={t("strapBody")} />
+              </div>
+            </section>
+            <section
+              data-static-section="collections"
+              className="mx-auto max-w-6xl border-t border-ivory/15 pt-20"
+            >
+              <Eyebrow>04 — {t("expressions")}</Eyebrow>
+              <Title>
+                {t("personalOne")}
+                <br />
+                {t("personalTwo")}
+              </Title>
+              <p className="mt-6 max-w-lg text-sm text-muted">
+                {t("finishBody")}
+              </p>
+              <ul className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4">
+                {finishes.map((f) => (
+                  <li key={f.id} className="flex items-center gap-4 text-xs">
+                    <span
+                      aria-hidden="true"
+                      className="size-7 shrink-0 rounded-full"
+                      style={{ backgroundColor: f.case }}
+                    />
+                    {fa ? f.fa : f.name}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </div>
+        </>
+      }
+    >
       <Beat
         id="hero-type"
         start={0}
@@ -264,7 +371,7 @@ export async function WatchStory({ locale }: { locale: string }) {
         end={0.596}
         className="flex items-center"
       >
-        <div className="absolute left-6 top-1/2 w-[40%] -translate-y-1/2 space-y-7 md:left-[16%] md:w-[22%] md:space-y-10">
+        <div className="absolute left-6 top-1/2 w-[34%] -translate-y-1/2 space-y-7 md:left-[16%] md:w-[22%] md:space-y-10">
           <Copy label={t("dialTitle")} body={t("macroDialBody")} />
           <Copy label={t("handsTitle")} body={t("handsBody")} />
           <Copy label={t("bezelTitle")} body={t("bezelBody")} />

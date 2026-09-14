@@ -42,7 +42,19 @@ export function mountMasterTimeline(story: HTMLElement, state: NarrativeState) {
       const alpha = Math.min(enter, leave);
       el.style.opacity = String(alpha);
       el.style.visibility = alpha > 0.002 ? "visible" : "hidden";
-      el.style.transform = `translate3d(0,${(1 - enter) * 35 - (1 - leave) * 22}px,0)`;
+      const local = gsap.utils.clamp(0, 1, (p - start) / (end - start));
+      const motion = el.dataset.beat;
+      const y =
+        motion === "hero-type"
+          ? -local * innerHeight * 1.15
+          : motion === "manifesto-type" ||
+              motion === "reassembly" ||
+              motion === "perspective"
+            ? (0.5 - local) * innerHeight * 1.5
+            : motion === "vertical-type"
+              ? (0.5 - local) * innerHeight * 1.9
+              : (1 - enter) * 35 - (1 - leave) * 22;
+      el.style.transform = `translate3d(0,${y}px,0)`;
       el.inert = alpha < 0.35;
       el.setAttribute("aria-hidden", String(alpha < 0.01));
     }

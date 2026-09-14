@@ -208,7 +208,13 @@ function Product({
     };
   }, [asset.scene]);
   useEffect(() => {
-    setDpr(state.quality === "low" ? 1 : size.width < 1100 ? 1.25 : 1.5);
+    setDpr(
+      state.quality === "low"
+        ? 1
+        : state.quality === "medium" || size.width < 1100
+          ? 1.25
+          : 1.5,
+    );
   }, [setDpr, size.width, state]);
   useEffect(() => {
     const studio = new Scene();
@@ -467,9 +473,9 @@ function Product({
   });
   const lines = useMemo(() => {
     const positions = [];
-    for (let band = 0; band < 9; band++)
-      for (let j = 0; j < 260; j++) {
-        const u = (j / 259) * Math.PI * 3;
+    for (let band = 0; band < 18; band++)
+      for (let j = 0; j < 420; j++) {
+        const u = (j / 419) * Math.PI * 3;
         const r = 4.0 + Math.sin(u * 2 + band * 0.2) * 1.25;
         positions.push(
           Math.sin(u) * r,
@@ -504,9 +510,9 @@ function Product({
         <points geometry={lines}>
           <pointsMaterial
             color="#bda87a"
-            size={0.018}
+            size={0.035}
             transparent
-            opacity={0.25}
+            opacity={0.65}
             depthWrite={false}
           />
         </points>
