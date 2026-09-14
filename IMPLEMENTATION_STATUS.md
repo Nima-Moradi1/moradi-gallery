@@ -1,8 +1,8 @@
 # Moradi Gallery — Implementation Status
 
-Last updated: 2026-09-13
-Current branch: main
-Current commit: none (new local repository, all source uncommitted)
+Last updated: 2026-09-14
+Current branch: moradi-gallery
+Current commit: recorded in the categorized initial project history
 Current owner/agent: Codex
 
 ## Active refinement — 2026-09-13
@@ -12,12 +12,12 @@ User requested the entire project be refined against the WebGL animation parity 
 ### WebGL parity scoreboard
 
 Reference animations observed: audit in progress
-Implemented desktop: 0
-Implemented mobile: 0
-Reverse-scroll verified: 0
-Visually matched: 0
-Blocked by asset limitations: original separable asset being authored
-Remaining: full narrative
+Implemented desktop: source implementation present; visual parity not yet freshly compared
+Implemented mobile: source implementation present; visual parity not yet freshly compared
+Reverse-scroll verified: structural assembly cycles pass; browser reverse-scroll comparison remains pending
+Visually matched: 0 (no unsubstantiated parity claim)
+Blocked by asset limitations: no current blocker to source validation
+Remaining: reference comparison, profiling, and editorial completion
 3D parity gate: INCOMPLETE
 Current focus: The Watch WebGL parity
 
@@ -64,7 +64,7 @@ The Moradi hero is original generated watch artwork with real HTML text and a fi
 
 ## 4. Completed
 
-- [x] Local repository initialized on main at the requested Desktop path; no remote or deployment.
+- [x] Local repository initialized at the requested Desktop path; categorized initial history established on moradi-gallery; no deployment.
 - [x] Supplied brief preserved unmodified in docs/brief.
 - [x] Initial live reference audit and screenshot folders.
 - [x] Next.js strict TypeScript, pinned compatible packages, lint and formatting configuration.
@@ -74,29 +74,28 @@ The Moradi hero is original generated watch artwork with real HTML text and a fi
 - [x] Locale switch, native modal navigation, Escape dismissal, focus return, working section anchors.
 - [x] Preview noindex metadata/robots, localized error/loading components, typed product/business boundaries.
 - [x] Build, lint, types, formatting, peer compatibility, HTTP route checks, browser behavior, and initial visual comparison.
+- [x] Original Calibre M GLB, node inventory, asset build/verification scripts, staged assembly, material finishes, GSAP narrative timeline, and a client-only R3F scene with quality/fallback handling.
 
 ## 5. Current focus
 
-- Task: prepare the Phase 3 watch model and progressive WebGL boundary.
-- Why now: the static foundation is in place and can remain the fallback while a real 3D asset is developed.
-- Files: src/features/home/sections/HeroExperience.tsx; future src/features/experience3d; docs/ASSET_MANIFEST.md.
-- Expected outcome: an original/licensed optimized model with a stable first frame, graceful fallback, and measured quality tiers.
-- Validation: build/check plus browser comparison against docs/design/hero-concept.png and current QA captures.
+- Task: validate and refine the implemented WebGL watch narrative against the observed reference.
+- Why now: the original model, progressive client boundary, scroll timeline, fallback, and device quality handling are present in source; visual parity and runtime behavior need fresh browser evidence.
+- Files: src/features/experience3d; public/models/moradi-calibre-m.glb; docs/reference/the-watch; docs/ASSET_MANIFEST.md.
+- Expected outcome: a stable first frame, graceful fallback, and measured quality tiers with independently checked desktop and mobile storytelling.
+- Validation: pnpm check, pnpm verify:watch, plus browser comparison against docs/design/hero-concept.png and current QA captures.
 - Visual reference: docs/qa/hero-en-1586.png and docs/qa/hero-fa-1440.png.
 
 ## 6. Next tasks
 
-1. [ ] Author/source a high-quality separable watch GLB with clear ownership and compressed size targets.
-2. [ ] Add a dynamically loaded R3F scene, light rig, actual readiness signals, error handling, and device quality tiers.
-3. [ ] Build GSAP hero/manifesto/macro/resolve/exit phases with mobile and reduced-motion variants.
-4. [ ] Complete the remaining global curation, concierge, lifestyle, interactive collection, brand, finder, FAQ, and final CTA sections.
-5. [ ] Confirm real products, offered brands, business contact, warranty and delivery/returns policies before publishing claims.
-6. [ ] Finish mobile reference measurements, Safari/WebKit, automated end-to-end tests, asset audit, Lighthouse, FPS/memory and bundle profiling.
-7. [ ] Set the real production origin, canonical/hreflang/sitemap and launch metadata; publish only when requested.
+1. [ ] Compare desktop and mobile scene composition, camera travel, staging, and reverse scrolling against the documented reference sequence.
+2. [ ] Run Safari/WebKit and automated end-to-end coverage; complete asset, Lighthouse, FPS/memory, and bundle profiling.
+3. [ ] Complete the remaining global curation, concierge, lifestyle, interactive collection, brand, finder, FAQ, and final CTA sections.
+4. [ ] Confirm real products, offered brands, business contact, warranty and delivery/returns policies before publishing claims.
+5. [ ] Set the real production origin, canonical/hreflang/sitemap and launch metadata; publish only when requested.
 
 ## 7. Blockers
 
-No blocker to the completed foundation. The real product catalog, business policies/contacts, lifestyle assets, and final GLB have not been supplied. The earlier usage-limit interruption has been resolved and the preview is running. Do not fabricate missing business details or represent the generated hero as real inventory.
+No blocker to the completed foundation or the current 3D source. The real product catalog, business policies/contacts, and lifestyle assets have not been supplied. Do not fabricate missing business details or represent original concept artwork as real inventory.
 
 ## 8. Assets
 
@@ -106,19 +105,20 @@ No blocker to the completed foundation. The real product catalog, business polic
 - docs/design/moradi-watch-source.png: original edited image source.
 - public/images/hero/moradi-watch.webp: 1585 × 992, 44,990 bytes.
 - public/brand/monogram.svg and src/app/icon.svg: first-pass geometric M.
+- public/models/moradi-calibre-m.glb: original separable model; see docs/3d/model-metrics.json and docs/3d/WATCH_NODE_INVENTORY.md.
 - docs/reference: internal comparison screenshots only.
 
 ### Missing
 
-Final GLB, mobile variant, 3D textures/environment, lifestyle sequence, confirmed stock imagery.
+Additional mobile-specific art direction, final environment/texture treatment, lifestyle sequence, and confirmed stock imagery.
 
 ## 9. 3D scene status
 
-Not started. No canvas, model, lighting, camera controller, quality tiers, or scroll phases are implemented. The static hero is the usable fallback. Three/R3F/Drei are installed but not imported by the page.
+Implemented in source: a client-only R3F canvas, original Calibre M GLB, lighting, scroll-controlled camera and staged assembly, readiness/error fallback, reduced-motion behavior, and device quality tiers. `pnpm verify:watch` passes 200 interrupted/reverse assembly cycles and keyframe checks. Fresh browser visual comparison and runtime profiling remain pending; do not claim reference parity yet.
 
 ## 10. Motion status
 
-Native scrolling. Tailwind hover/focus feedback. Motion owns the small menu content transition; native dialog owns focus/inertness/Escape. No pinned scenes or perpetual animation. Menu transition respects reduced-motion through useReducedMotion; comprehensive reduced-motion browser emulation remains pending with the future cinematic flow.
+GSAP owns the persistent scroll choreography in the 3D watch experience; Motion owns the small menu content transition; native dialog owns focus/inertness/Escape. Quality and reduced-motion paths are implemented in source. Comprehensive browser reduced-motion and reverse-scroll visual checks remain pending.
 
 ## 11. i18n / RTL status
 
@@ -146,7 +146,7 @@ These are in-app browser checks, not physical-device or Safari certification. Se
 - Peer dependencies: no conflicts.
 - Hero source WebP: 44,990 bytes (~44 KiB).
 - Initial JS / 3D chunk / LCP / CLS / INP / FPS: not measured.
-- GLB and 3D texture payload: not applicable yet.
+- GLB and 3D texture payload: included; runtime payload and memory impact not yet benchmarked.
 - Browser console: no warnings/errors in inspected preview session.
 
 ## 14. Bugs / fidelity ledger
@@ -169,4 +169,4 @@ The current preview was launched with pnpm start on 127.0.0.1:3000. It serves th
 
 ## 16. Resume here
 
-The Desktop repo, reference baseline, bilingual foundation, and static opening view are implemented. Open this status file, then HeroExperience.tsx and docs/ASSET_MANIFEST.md. Run pnpm check before extending the project. Preserve the static hero as the fallback while preparing an original/licensed watch model and the client-only WebGL boundary. Compare the English opening at 1586 × 992 with docs/design/hero-concept.png; inspect Persian separately because its font metrics and shaping require independent scale. Do not re-scaffold, replace the generated artwork with reference-site media, or treat the catalog preview as confirmed inventory. Full scroll storytelling and the remaining utility/editorial sections are still future phases.
+The Desktop repo, categorized initial history, bilingual foundation, static fallback, and source-level WebGL watch narrative are implemented. Open this status file, then `src/features/experience3d/MoradiWatchExperience.tsx`, `src/features/experience3d/WatchScene.tsx`, and `docs/ASSET_MANIFEST.md`. Run `pnpm check` and `pnpm verify:watch` before extending the project. Compare desktop and Persian/mobile layouts separately against the documented reference frames; do not claim parity before those captures exist. Do not re-scaffold, replace the generated artwork with reference-site media, or treat the catalog preview as confirmed inventory. Editorial sections and production validation remain future phases.
